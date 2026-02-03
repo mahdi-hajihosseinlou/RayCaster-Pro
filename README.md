@@ -30,7 +30,7 @@ cd RayCaster-Pro
 
 # Install dependencies (Ubuntu/Debian)
 sudo apt-get update
-sudo apt-get install build-essential libsdl2-dev
+sudo apt-get install build-essential git libraylib-dev
 
 # Compile and run
 make
