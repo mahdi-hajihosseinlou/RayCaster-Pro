@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevLog | RayCaster Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">RayCaster Pro</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="devlog.html" class="active">DevLog</a>
+                <a href="gallery.html">Gallery</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <h1>Technical Documentation</h1>
+        <p>Development insights and technical challenges</p>
+    </header>
+
+    <main class="devlog-content">
+        <article class="article">
+            <h2>How Raycasting Works</h2>
+            <p>Raycasting transforms 2D maps into 3D environments by casting rays from the player's viewpoint.</p>
+            <p>Each ray calculates distance to walls, creating a 3D perspective without complex 3D math.</p>
+            <h3>Key Components:</h3>
+            <ul>
+                <li>Player position in 2D map</li>
+                <li>Ray direction calculation</li>
+                <li>Distance measurement using DDA</li>
+                <li>Wall height calculation</li>
+            </ul>
+        </article>
+        
+        <article class="article">
+            <h2>Fixing Fish-Eye Effect</h2>
+            <p>The fish-eye effect made walls look curved and distorted.</p>
+            <p>Problem: Using wrong distance formula (Euclidean distance).</p>
+            <p>Solution: Use perpendicular distance to camera plane instead.</p>
+            <p>This fix made walls appear straight and proportional.</p>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>RayCaster Pro - Open Source Game Engine</p>
+            <p>Student: Mahdi Hajihosseinlou | ID: 404521237</p>
+            <p class="copyright">© Open Source License 2026</p>
+        </div>
+    </footer>
+</body>
+</html>
